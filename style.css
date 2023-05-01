@@ -1,0 +1,321 @@
+* {
+    font-family:'Poppins', sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/*-- First section --*/
+
+.section___one {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url(Images/50\ Shades\ of\ Grey.jpg);
+    background-color: #ffff;
+}
+
+/*-- Main title --*/
+
+h1 {
+    position: relative;
+    text-align: center;
+    top: 150px;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+/*-- Main button --*/
+
+.btn-primary {
+    position: relative;
+    display: block;
+    left: 580px;
+    border-radius: 17px;
+    padding: 5px 20px 5px 20px;
+    top: 250px;
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+
+/*-- Main container --*/
+
+#exampleModal {
+    width: 100vw;
+    height: 100vh;
+}
+
+/*-- Arrow image --*/
+
+.section__one__img {
+    width: 50px;
+    height: 50px;
+    color: rgb(64, 64, 196);
+    position: relative;
+    display: flex;
+    top: 200px;
+    left: 655px;
+    animation-name: flecha1;
+    animation-duration: 1s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flecha1 {
+    10%{top: 180px;}
+    20%{bottom: 90px;}
+    
+}
+
+/*-- Close symbol --*/
+
+.btn-close {
+    position: relative;
+    left: 96%;
+    top: -33px;
+    z-index: 10;
+}
+
+/*-- Second container modal --*/
+
+.modal-content {
+    background-image: url(Images/50\ Shades\ of\ Grey.jpg);
+    width: 100vw;
+    height: 100vh;
+}
+
+/*-- Second title (Calculadora) --*/
+
+.title-modal {
+    position: relative;
+    display: block;
+    top: 15px;
+    font-size: 40px;
+    text-decoration: underline;
+    right: 370px;
+    color: #000000;
+}
+
+/*-- Modal footer --*/
+
+.modal-footer {
+    border-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*-- Calculator container --*/
+
+.container {
+    position: relative;
+    background-image: url(Images/fondo\ negro.jpg);
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    background-size: cover;
+    border-style:hidden;
+    opacity: .7;
+    width: 330px;
+    height: 467px;
+    right: 375px;
+    border-radius: 25px;
+}
+
+/*-- Close Button --*/
+
+.btn-secondary {
+    position: relative;
+    bottom: 5px;
+    right: 5px;
+}
+
+/*-- Calculator div --*/
+
+.calculator-keypad {
+    position: relative;
+    display: flex;
+    width: 300px;
+    bottom: 40px;
+    left: 7px;
+}
+
+/*-- Calculator display div --*/
+
+.calculator-display {
+    position: relative;
+    text-align: end;
+    margin: 0;
+    font-size: 50px;
+    height: 70px;
+    border-radius: 10px;
+    padding: 4px;
+    border-style:hidden;
+}
+
+/*-- Calculator input text --*/
+
+input {
+    width: 305px;
+    top: 15px;
+}
+
+/*-- keypad div --*/
+
+.keypad-button {
+    position: relative;
+    font-size: 40px;
+    background-color: #df8a01;
+    border-radius: 50px;
+    width: 66px;
+    height: 64px;
+    float:left;
+    margin: 4px;
+    text-align: center;
+    cursor:grabbing;
+    top: 70px;
+}
+
+.keypad-button:hover {
+    scale: 1.05;
+}
+
+/*-- Buttons design --*/
+
+.buttons {
+    position: relative;
+    top: 10px;
+    margin: 0;
+    font-size: 50px;
+    padding: 5px;
+    width: 330px;
+    cursor: pointer;
+}
+
+/*-- Button save localstorage --*/
+
+.button-grabar {
+    position: relative;
+    width: 200px;
+    height: 60px;
+    background-color: #06d410a0;
+    left: 10px;
+    border-radius: solid;
+    top: 78px;
+    border-radius: 40px;
+    font-size: 35px;
+}
+
+.button-grabar:hover {
+    scale: 1.05;
+}
+
+/*-- Button numbers design --*/
+
+.number {
+    position: relative;
+    font-size: 40px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    width: 66px;
+    height: 64px;
+    float:left;
+    margin: 4px;
+    text-align: center;
+    padding: 3px;
+    cursor: pointer;
+}
+
+/*-- Arrow image --*/
+
+.imagen-flecha {
+    width: 90px;
+    height: 90px;
+    position:absolute;
+    display: flex;
+    left: 430px;
+    top: 80px;
+    animation:backwards;
+    animation-name: flecha2;
+    animation-timing-function: ease ;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
+
+@keyframes flecha2 {
+    10%{left: 400px;}
+    20%{right: 200px;}
+    
+}
+
+/*-- Localstorage text --*/
+
+#storagetext {
+    position: fixed;
+    display: block;
+    background-color: #f1f1f0;
+    left: 800px;
+    top: 90px;
+    max-width: 350px;
+    max-height: 590px;   
+}
+
+/*-- Localstorage div --*/
+
+#divLocalStorage {
+    position: fixed;
+    background-image: url(Images/fondo\ negro.jpg);
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 770px;
+    margin: 0px;
+    height: 625px;
+    width: 400px;
+    bottom: 1px;
+    border-radius: 20px;
+    text-align: center;
+    opacity: .7.3;
+    color: #f1f1f0;
+    font-size: 17px;
+    padding-left: 15px;
+    z-index: -2;
+    overflow:auto;
+    scroll-padding-top: 20px;
+    height: 550px;
+    bottom: 10px;
+}
+
+/*-- Localstorage title --*/
+
+.title-storage {  
+    position: fixed;
+    display:block;
+    top: 3px;
+    left: 580px;
+    padding-left: 190px;
+    padding-right: 190px;
+    color:#000000;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/*-- Localstorage button clear --*/
+
+.button-borrar {
+    border-radius: 20px;
+    position: relative;
+    top: 20px;
+    left: 310px;
+}
+
+
+
+
+
+
